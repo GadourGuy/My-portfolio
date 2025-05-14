@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Othman Ali Portfolio</title>
+    <link rel="stylesheet" href="../Style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    
+</head>
+<body>
+	<div class="container">
+        <nav>
+            <img src="../images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../Public/aboutme.html">About</a></li>
+                <li><a href="../Public/Services.html">Services</a></li>
+                <li><a href="../Public/portfolio.html">Portfolio</a></li>
+                <li><a href="../Public/professionalDevelopment.html">Professional Development</a></li>
+                <li><a href="../Public/contact.html">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+    </div>
+	<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="../Images/me1.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hi! I'm a passionate and a curious individual currently studying at UTM University, where I'm actively involved in projects that blend technology and creativity. I’ve worked on a variety of technical assignments—from designing network communication systems for smart university buildings to building a 3D maze game using ray casting and SDL2 in C. My interests also extend to web development, where I’ve created interactive sites for special occasions like this portfolio here. Outside of coding, I’m thoughtful about my personal branding and always looking for ways to stand out, Whether I’m crafting a user-friendly website, or preparing for an engineering exam, I strive to learn continuously and apply my skills in meaningful ways.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Problem Solving</span><br>efficient solutions in both programming and system design challenges.</li>
+                        <li><span>Web Development</span><br>Web applications Development</li>
+                        <li><span>Video Editing</span><br>Building Professinal Videos From Scratch Using Adobe Creative Cloud.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+						<li><span>2022</span><br>Media Team Leader for IndabaX event.</li>
+                        <li><span>2023</span><br>Internship at Sudan Power Plant development Institutation.</li>
+                        <li><span>2024</span><br>A global ranked partcipant in the famous projectEuler website.</li>
+                        <li><span>2025</span><br>A fresh Gradute from ALX Software Engineering 1 year Bootcamp.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2017-2019</span><br>SMA high school.</li>
+                        <li><span>2019-2023</span><br>University Of Khartoum Faculty Of Electrical Engineering.</li>
+                        <li><span>2024-current</span><br>Utm Faculty Of Computing Software Engineering Bachelor degree.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+
+<footer class="copyright">
+        <p>Copyright © Othman Ali</p>
+    </footer>
+</html>

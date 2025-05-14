@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Othman Ali Portfolio</title>
+    <link rel="stylesheet" href="../Style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <img src="../images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../Public/aboutme.html">About</a></li>
+                <li><a href="../Public/Services.html">Services</a></li>
+                <li><a href="../Public/portfolio.html">Portfolio</a></li>
+                <li><a href="../Public/professionalDevelopment.html">Professional Development</a></li>
+                <li><a href="../Public/contact.html">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+    </div>
+	<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> ogadours1@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> +601128893631</p>
+                <div class="social-icons">
+                    <a href="https://github.com/GadourGuy"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://x.com/OthmanGadour1"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://www.linkedin.com/in/othman-ali-a68a18289/"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    
+</div>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx0Bh_rma_nK-3svsodLiqa6uHx_ccgVz8C7l9rq4FSHr_J5Jy48_SJs9P-Ck4j4RBt/exec' 
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+<footer class="copyright">
+        <p>Copyright © Othman Ali</p>
+    </footer>
+</html>
