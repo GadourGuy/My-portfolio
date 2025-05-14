@@ -5,8 +5,6 @@ Welcome to my personal portfolio! This project showcases my skills, projects, an
 
 ## 🌐 Live Website
 
-Check out the live version here: [https://gadourguy.github.io/My-portfolio/](gadourguy.github.io/My-portfolio/)
-
 ## 📌 Features
 
 - Clean, responsive design
