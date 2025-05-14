@@ -5,7 +5,7 @@ Welcome to my personal portfolio! This project showcases my skills, projects, an
 
 ## 🌐 Live Website
 
-Check out the live version here: gadourguy.github.io/My-portfolio/
+Check out the live version here: [https://my-portfolio-link.com](gadourguy.github.io/My-portfolio/)
 
 ## 📌 Features
 
