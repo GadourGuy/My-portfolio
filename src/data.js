@@ -1,6 +1,5 @@
 import maze from './assets/maze.webp';
 import shell from './assets/shell.webp';
-import airbnb from './assets/airbnb.webp';
 import razakevent from './assets/razakevent.webp';
 
 export const profile = {
@@ -116,18 +115,6 @@ export const projects = [
       'A Unix style command interpreter in C: command parsing, process creation, I/O redirection, built in commands like cd, pwd and echo, and thorough error handling on top of Unix system calls.',
     tags: ['C', 'Unix', 'System calls'],
     links: [{ label: 'Source', href: 'https://github.com/EimanEltayeb/simple_shell' }],
-  },
-  {
-    title: 'AirBnB Clone',
-    kicker: 'Full stack web app · ALX',
-    image: airbnb,
-    description:
-      'A simplified Airbnb: a command interpreter and storage engine, a model layer backed by MySQL, a Flask web app and a RESTful API with a dynamic front end.',
-    tags: ['Python', 'Flask', 'MySQL', 'JavaScript'],
-    links: [
-      { label: 'Source', href: 'https://github.com/GadourGuy/AirBnB_clone' },
-      { label: 'Live', href: 'https://gadourguy.github.io/AirBnB_clone/' },
-    ],
   },
 ];
 
