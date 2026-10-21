@@ -26,15 +26,24 @@ export default function Contact() {
   const onSubmit = async (e) => {
     e.preventDefault();
     const form = e.currentTarget;
+    const data = new FormData(form);
     setStatus({ state: 'sending', text: 'Sending…' });
     try {
-      await fetch(SHEET_URL, { method: 'POST', body: new FormData(form) });
+      const res = await fetch(SHEET_URL, { method: 'POST', body: data });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
       form.reset();
       setStatus({ state: 'ok', text: 'Message sent. I’ll get back to you soon.' });
+      setTimeout(() => setStatus({ state: 'idle', text: '' }), 6000);
     } catch {
-      setStatus({ state: 'error', text: `Something went wrong. Email me at ${profile.email}.` });
+      // Keep the visitor's message: hand it to their email app instead.
+      const subject = `Portfolio message from ${data.get('Name')}`;
+      const body = `${data.get('Message') || ''}\n\n${data.get('Name')} (${data.get('Email')})`;
+      setStatus({
+        state: 'error',
+        text: 'The form couldn’t send right now.',
+        mailto: `mailto:${profile.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`,
+      });
     }
-    setTimeout(() => setStatus({ state: 'idle', text: '' }), 6000);
   };
 
   return (
@@ -82,7 +91,10 @@ export default function Contact() {
             <button type="submit" className="btn btn-solid" disabled={status.state === 'sending'}>
               {status.state === 'sending' ? 'Sending…' : 'Send message'} <i className="fa-solid fa-arrow-right" />
             </button>
-            <p className={`form-status is-${status.state}`} role="status">{status.text}</p>
+            <p className={`form-status is-${status.state}`} role="status">
+              {status.text}
+              {status.mailto && <> <a href={status.mailto}>Send it by email instead</a></>}
+            </p>
           </form>
         </div>
       </div>

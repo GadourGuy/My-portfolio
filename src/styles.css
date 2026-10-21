@@ -1234,6 +1234,7 @@ a.contact-line:hover { color: var(--accent); }
 .form-status { min-height: 1.5em; font-size: 14px; }
 .form-status.is-ok { color: #61b752; }
 .form-status.is-error { color: #ff6b97; }
+.form-status a { color: #fff; text-decoration: underline; text-underline-offset: 3px; }
 
 /* ---------- footer ---------- */
 .footer { border-top: 1px solid var(--line); background: var(--bg); }
