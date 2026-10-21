@@ -3,7 +3,7 @@ import { gsap, useGSAP } from '../lib/scroll.js';
 
 // Words wrapped in *asterisks* get the sunset gradient.
 const TEXT =
-  'I build software that has to work in the real world: *industrial* *machine* *vision* systems on factory floors, *fast* *back* *ends* and *full* *stack* web apps. A Computer Science student at UTM with a *3.99* *CGPA,* writing everything from C to the cloud.';
+  'I build software that has to work in the real world: *industrial* *machine* *vision* systems on factory floors and *fast* *full* *stack* web apps. A Computer Science student at UTM with a *3.99* *CGPA,* writing everything from C to the cloud.';
 
 export default function Statement() {
   const root = useRef(null);

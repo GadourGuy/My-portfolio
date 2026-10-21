@@ -1,6 +1,7 @@
 import maze from './assets/maze.webp';
 import shell from './assets/shell.webp';
 import airbnb from './assets/airbnb.webp';
+import razakevent from './assets/razakevent.webp';
 
 export const profile = {
   name: 'Othman Ali',
@@ -92,7 +93,7 @@ export const projects = [
   {
     title: 'RazakEvent',
     kicker: 'Full stack web app · 2026',
-    art: 'event',
+    image: razakevent,
     description:
       'Event management platform for Kolej Tun Razak, UTM. Students, staff and admins create, manage and discover college events in one place. Next.js front end with a feature sliced architecture, Express 5 + TypeORM back end.',
     tags: ['Next.js 16', 'React 19', 'TypeScript', 'Express 5', 'TypeORM', 'GitHub Actions'],

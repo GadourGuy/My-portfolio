@@ -1,4 +1,4 @@
-// Illustrations for projects whose source and screenshots are not public.
+// Illustrations for projects with no public screenshots.
 
 function VisionArt() {
   const stations = [
@@ -34,34 +34,9 @@ function VisionArt() {
   );
 }
 
-function EventArt() {
-  const events = [
-    ['Night Run', 'Sports', 'g1'],
-    ['Hackathon', 'Tech', 'g2'],
-    ['Cultural Night', 'Culture', 'g3'],
-    ['Career Talk', 'Talks', 'g4'],
-    ['Futsal Cup', 'Sports', 'g5'],
-    ['Charity Bazaar', 'Community', 'g6'],
-  ];
-  return (
-    <div className="art art-event">
-      <div className="art-bar"><i /><i /><i /><span>razakevent · Discover</span></div>
-      <div className="art-body event-body">
-        <div className="event-search"><i className="fa-solid fa-magnifying-glass" /> Search college events…</div>
-        <div className="event-grid">
-          {events.map(([t, c, g]) => (
-            <div className="event-card" key={t}>
-              <div className={`event-thumb ${g}`} />
-              <p className="event-cat">{c}</p>
-              <p className="event-title">{t}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
-  );
-}
+const ART = { vision: VisionArt };
 
 export default function ProjectArt({ kind }) {
-  return kind === 'vision' ? <VisionArt /> : <EventArt />;
+  const Art = ART[kind];
+  return <Art />;
 }

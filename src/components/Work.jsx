@@ -101,7 +101,7 @@ export default function Work() {
                       ))}
                     </div>
                   ) : (
-                    <p className="project-note project-anim"><i className="fa-solid fa-lock" /> Private source · illustration shown</p>
+                    <p className="project-note project-anim"><i className="fa-solid fa-lock" /> Private source{p.art ? ' · illustration shown' : ''}</p>
                   )}
                 </div>
                 <div className="project-window">
