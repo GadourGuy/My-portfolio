@@ -44,13 +44,13 @@ export default function Beyond() {
           <p className="beyond-date">29 April 2025 · UTM</p>
           <h3>CelcomDigi UniConnect</h3>
           <p>
-            An industry–academia programme run by CelcomDigi with UTM: talks, career workshops and networking
+            An industry and academia programme run by CelcomDigi with UTM: talks, career workshops and networking
             with people from telecoms and tech, covering digital innovation, 5G and where careers in Malaysia’s
             tech scene are heading.
           </p>
           <ul className="takeaways">
-            <li><strong>The future is digital-first.</strong> Cloud, data and mobile skills are what keep you competitive as every industry transforms.</li>
-            <li><strong>Soft skills matter.</strong> Communication, adaptability and a growth mindset weigh heavily in hiring and long-term growth.</li>
+            <li><strong>The future is digital first.</strong> Cloud, data and mobile skills are what keep you competitive as every industry transforms.</li>
+            <li><strong>Soft skills matter.</strong> Communication, adaptability and a growth mindset weigh heavily in hiring and long term growth.</li>
           </ul>
         </div>
       </div>

@@ -83,7 +83,7 @@ export default function Hero({ ready }) {
 
         <div className="hero-after">
           <p className="hero-after-role">Software Engineer</p>
-          <p className="hero-after-line">Machine vision · Back ends · Full-stack web</p>
+          <p className="hero-after-line">Machine vision · Back ends · Full stack web</p>
         </div>
 
         <button className="scroll-cue" onClick={() => scrollTo('#about')} aria-label="Scroll down">

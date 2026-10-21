@@ -34,33 +34,33 @@ export const stats = [
 ];
 
 export const education = [
-  { period: '2024 — Now', title: 'Bachelor of Computer Science', place: 'Universiti Teknologi Malaysia', note: 'CGPA 3.99 · Data structures, algorithms, OOP, web, databases, networks' },
-  { period: '2023 — 2025', title: 'Full Stack Software Engineering', place: 'ALX Africa', note: '1-year intensive bootcamp: C, Python, JavaScript, DevOps' },
-  { period: '2019 — 2023', title: 'Electrical Engineering', place: 'University of Khartoum', note: 'Faculty of Electrical Engineering' },
+  { period: '2024 to present', title: 'Bachelor of Computer Science', place: 'Universiti Teknologi Malaysia', note: 'CGPA 3.99 · Data structures, algorithms, OOP, web, databases, networks' },
+  { period: '2023 to 2025', title: 'Full Stack Software Engineering', place: 'ALX Africa', note: 'One year intensive bootcamp: C, Python, JavaScript, DevOps' },
+  { period: '2019 to 2023', title: 'Electrical Engineering', place: 'University of Khartoum', note: 'Faculty of Electrical Engineering' },
 ];
 
 export const experience = [
   {
     company: 'ABW Technologies Sdn Bhd',
     role: 'R&D Software Engineering Intern',
-    period: '07/2026 — 10/2026',
+    period: '07/2026 to 10/2026',
     tags: ['Python', 'PySide6', 'OpenCV', 'C++', 'OpenMP', 'Modbus TCP', 'GitLab'],
     points: [
-      'Co-developed the ABW Vision Platform, a Windows automated optical inspection (AOI) system for multi-station production lines, in a 4-person team.',
-      'Integrated Hikrobot industrial cameras via the MVS SDK and PLCs over Modbus TCP to report per-station PASS/FAIL results.',
-      'Built high-performance C++ image-processing DLLs: template matching, blob analysis, circle search, contour matching and colour extraction.',
-      'Accelerated template matching with an OpenMP parallel angle sweep and coarse-to-fine pyramid search without losing accuracy.',
-      'Shipped a node-based Recipe Manager, role-based login (Operator/Engineer) and a live manager dashboard; fixed UI freezes and thread leaks.',
+      'Developed the ABW Vision Platform with a team of four: a Windows automated optical inspection (AOI) system for production lines with multiple stations.',
+      'Integrated Hikrobot industrial cameras via the MVS SDK and PLCs over Modbus TCP to report PASS/FAIL results for each station.',
+      'Built fast C++ image processing DLLs: template matching, blob analysis, circle search, contour matching and colour extraction.',
+      'Accelerated template matching with an OpenMP parallel angle sweep and a coarse to fine image pyramid search without losing accuracy.',
+      'Shipped a visual Recipe Manager, login with Operator and Engineer roles and a live manager dashboard; fixed UI freezes and thread leaks.',
     ],
   },
   {
     company: 'Udemy',
     role: 'Full Stack Software Engineering Student',
-    period: '03/2025 — 09/2025',
+    period: '03/2025 to 09/2025',
     tags: ['React', 'Node.js', 'Express', 'PostgreSQL', 'MongoDB', 'Tailwind'],
     points: [
-      'Built responsive, mobile-first web apps with HTML5, CSS3, Bootstrap and Tailwind.',
-      'Built single-page applications in React with hooks, props, state management and client-side routing.',
+      'Built responsive web apps for phones and desktops with HTML5, CSS3, Bootstrap and Tailwind.',
+      'Built single page applications in React with hooks, props, state management and client side routing.',
       'Connected React front ends to RESTful APIs built with Node.js and Express.js.',
       'Managed persistent data with PostgreSQL and MongoDB.',
     ],
@@ -68,13 +68,13 @@ export const experience = [
   {
     company: 'ALX Africa',
     role: 'Full Stack Software Engineering Trainee',
-    period: '08/2023 — 02/2025',
+    period: '08/2023 to 02/2025',
     tags: ['C', 'Python', 'JavaScript', 'Flask', 'Docker', 'Nginx', 'Shell'],
     points: [
-      'Low-level programming in C and high-level development with Python and JavaScript.',
+      'Low level programming in C and high level development with Python and JavaScript.',
       'Developed dynamic web applications with Node.js and Flask.',
       'Managed SQL and MongoDB databases; practised DevOps with Docker, Nginx and shell scripting.',
-      'Collaborated on a full-featured Airbnb clone using Git and GitHub.',
+      'Collaborated on a complete Airbnb clone using Git and GitHub.',
     ],
   },
 ];
@@ -85,16 +85,16 @@ export const projects = [
     kicker: 'Industrial machine vision · 2026',
     art: 'vision',
     description:
-      'A Windows desktop automated optical inspection system for production lines: live industrial-camera capture, C++ image-processing DLLs, a node-based recipe editor and PASS/FAIL reporting to PLCs.',
+      'A Windows desktop automated optical inspection system for production lines: live capture from industrial cameras, C++ image processing DLLs, a visual recipe editor and PASS/FAIL reporting to PLCs.',
     tags: ['Python', 'PySide6', 'OpenCV', 'C++', 'OpenMP', 'Modbus TCP'],
     links: [],
   },
   {
     title: 'RazakEvent',
-    kicker: 'Full-stack web app · 2026',
+    kicker: 'Full stack web app · 2026',
     art: 'event',
     description:
-      'Event management platform for Kolej Tun Razak, UTM. Students, staff and admins create, manage and discover college events in one place. Feature-sliced Next.js front end, Express 5 + TypeORM back end.',
+      'Event management platform for Kolej Tun Razak, UTM. Students, staff and admins create, manage and discover college events in one place. Next.js front end with a feature sliced architecture, Express 5 + TypeORM back end.',
     tags: ['Next.js 16', 'React 19', 'TypeScript', 'Express 5', 'TypeORM', 'GitHub Actions'],
     links: [],
   },
@@ -103,7 +103,7 @@ export const projects = [
     kicker: '3D game engine · C · 2024',
     image: maze,
     description:
-      'A 3D maze game written in C with SDL2. A ray-casting engine built from scratch renders a 2D map array into a navigable, real-time 3D world.',
+      'A 3D maze game written in C with SDL2. A ray casting engine built from scratch renders a 2D map array into a navigable 3D world in real time.',
     tags: ['C', 'SDL2', 'Ray casting'],
     links: [{ label: 'Source', href: 'https://github.com/GadourGuy/The-Maze' }],
   },
@@ -112,16 +112,16 @@ export const projects = [
     kicker: 'Systems programming · C · 2024',
     image: shell,
     description:
-      'A Unix-like command interpreter in C: command parsing, process creation, I/O redirection, built-ins like cd, pwd and echo, and thorough error handling on top of Unix system calls.',
+      'A Unix style command interpreter in C: command parsing, process creation, I/O redirection, built in commands like cd, pwd and echo, and thorough error handling on top of Unix system calls.',
     tags: ['C', 'Unix', 'System calls'],
     links: [{ label: 'Source', href: 'https://github.com/EimanEltayeb/simple_shell' }],
   },
   {
     title: 'AirBnB Clone',
-    kicker: 'Full-stack web app · ALX',
+    kicker: 'Full stack web app · ALX',
     image: airbnb,
     description:
-      'A simplified Airbnb: a command interpreter and storage engine, a MySQL-backed model layer, a Flask web app and a RESTful API with a dynamic front end.',
+      'A simplified Airbnb: a command interpreter and storage engine, a model layer backed by MySQL, a Flask web app and a RESTful API with a dynamic front end.',
     tags: ['Python', 'Flask', 'MySQL', 'JavaScript'],
     links: [
       { label: 'Source', href: 'https://github.com/GadourGuy/AirBnB_clone' },
@@ -132,17 +132,17 @@ export const projects = [
 
 export const repos = [
   { name: 'Students-Industrial-Training-Management-System', lang: 'PHP', desc: 'Web system for managing students’ industrial training placements.' },
-  { name: 'PTII-Hotel-Management-System', lang: 'C++', desc: 'Object-oriented hotel management system for Programming Technique II.' },
+  { name: 'PTII-Hotel-Management-System', lang: 'C++', desc: 'Object oriented hotel management system for Programming Technique II.' },
   { name: 'kems_app', lang: 'Dart', desc: 'Flutter mobile app built for the UTM mobile app development course.' },
   { name: 'kems-product-website', lang: 'HTML', desc: 'Product website for the KEMS mobile app assignment.', live: 'https://gadourguy.github.io/kems-product-website/' },
-  { name: 'Digital-Mental-Health-Hub', lang: 'HTML', desc: 'A digital hub offering mental-health resources for students.' },
+  { name: 'Digital-Mental-Health-Hub', lang: 'HTML', desc: 'A digital hub offering mental health resources for students.' },
   { name: 'The-Simon-Game', lang: 'JavaScript', desc: 'The classic Simon memory game in the browser.', live: 'https://gadourguy.github.io/The-Simon-Game/' },
   { name: 'ProjectEuler', lang: 'Python', desc: 'Solutions to Project Euler problems.' },
   { name: 'monty', lang: 'C', desc: 'Interpreter for Monty bytecode, built on stacks and queues.' },
-  { name: 'printf', lang: 'C', desc: 'A re-implementation of the C printf function.' },
+  { name: 'printf', lang: 'C', desc: 'A custom implementation of the C printf function.' },
   { name: 'binary_trees', lang: 'C', desc: 'Binary trees, BSTs, AVL trees and heaps in C.' },
-  { name: 'sorting_algorithms', lang: 'C', desc: 'Sorting algorithms and Big-O analysis in C.' },
-  { name: 'alx-backend-storage', lang: 'Python', desc: 'Back-end storage work with MySQL, MongoDB and Redis.' },
+  { name: 'sorting_algorithms', lang: 'C', desc: 'Sorting algorithms and Big O analysis in C.' },
+  { name: 'alx-backend-storage', lang: 'Python', desc: 'Back end storage work with MySQL, MongoDB and Redis.' },
 ];
 
 export const langColors = {
@@ -162,7 +162,7 @@ export const skillRows = [
 ];
 
 export const skillGroups = [
-  { title: 'Systems', icon: 'fa-solid fa-microchip', text: 'C and C++ down to the metal: shells, interpreters, ray casters and OpenMP-accelerated vision DLLs.' },
+  { title: 'Systems', icon: 'fa-solid fa-microchip', text: 'C and C++ down to the metal: shells, interpreters, ray casters and OpenMP accelerated vision DLLs.' },
   { title: 'Back end', icon: 'fa-solid fa-server', text: 'RESTful APIs with Node.js, Express, Flask and Spring MVC, backed by SQL and NoSQL databases.' },
   { title: 'Front end', icon: 'fa-solid fa-layer-group', text: 'React and Next.js apps with TypeScript, responsive layouts and motion.' },
   { title: 'Machine learning', icon: 'fa-solid fa-brain', text: 'Classifier evaluation (J48, Random Forest, Random Tree) in Weka and perceptron training logic.' },
@@ -170,7 +170,7 @@ export const skillGroups = [
 
 export const milestones = [
   { year: '2026', text: 'R&D Software Engineering Intern at ABW Technologies.' },
-  { year: '2025', text: 'Graduated from ALX Africa’s 1-year Software Engineering programme.' },
+  { year: '2025', text: 'Graduated from ALX Africa’s one year Software Engineering programme.' },
   { year: '2025', text: 'Attended CelcomDigi UniConnect at UTM.' },
   { year: '2024', text: 'Globally ranked participant on Project Euler.' },
   { year: '2023', text: 'Internship at the Sudan Power Plant Development Institution.' },

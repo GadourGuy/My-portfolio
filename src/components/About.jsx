@@ -39,7 +39,7 @@ export default function About() {
 
   return (
     <section className="about" id="about" ref={root}>
-      <div className="about-bigname" aria-hidden="true">OTHMAN ALI — OTHMAN ALI —</div>
+      <div className="about-bigname" aria-hidden="true">OTHMAN ALI ✦ OTHMAN ALI ✦</div>
 
       <div className="container about-grid">
         <div className="about-visual">
@@ -53,7 +53,7 @@ export default function About() {
           <p className="lead">
             I’m a Computer Science student at Universiti Teknologi Malaysia who likes to go one layer deeper
             than the assignment asks. I’ve written shells and ray casters in C, shipped an industrial
-            machine-vision platform in Python and C++, and built full-stack web apps with React, Next.js and Express.
+            machine vision platform in Python and C++, and built full stack web apps with React, Next.js and Express.
           </p>
           <p>
             I care about software that is fast, reliable and pleasant to use, whether it runs on a factory PC

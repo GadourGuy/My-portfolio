@@ -72,7 +72,7 @@ export default function Work() {
       <div className="work-head container">
         <p className="eyebrow"><b>03</b> Selected work</p>
         <h2 className="section-title huge">Things I’ve <span className="grad">built</span></h2>
-        <p className="lead">Industrial software, full-stack platforms and low-level systems, each built to hold up when people actually use it.</p>
+        <p className="lead">Industrial software, full stack platforms and low level systems, each built to hold up when people actually use it.</p>
       </div>
 
       <div className="projects">
