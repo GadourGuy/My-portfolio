@@ -97,7 +97,7 @@ export const projects = [
     description:
       'Event management platform for Kolej Tun Razak, UTM. Students, staff and admins create, manage and discover college events in one place. Next.js front end with a feature sliced architecture, Express 5 + TypeORM back end.',
     tags: ['Next.js 16', 'React 19', 'TypeScript', 'Express 5', 'TypeORM', 'GitHub Actions'],
-    links: [],
+    links: [{ label: 'Source', href: 'https://github.com/EyadAimen/RazakEvent' }],
   },
   {
     title: 'The Maze',
