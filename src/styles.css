@@ -363,11 +363,36 @@ ul, ol { list-style: none; }
   overflow: hidden;
 }
 .hero-media img {
+  position: absolute;
+  will-change: transform;
+}
+/* Wide screens: the full portrait on the right, a blurred copy filling the rest. */
+.hero-bg {
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 50% 18%;
-  will-change: transform;
+  filter: blur(36px) brightness(0.55) saturate(1.2);
+}
+.hero-fg {
+  right: 8vw;
+  bottom: 0;
+  height: 100%;
+  width: auto;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 14%, #000 86%, transparent 100%);
+  mask-image: linear-gradient(90deg, transparent 0%, #000 14%, #000 86%, transparent 100%);
+}
+/* Tall screens: the portrait already fits, so let it fill the screen. */
+@media (max-aspect-ratio: 9 / 10) {
+  .hero-bg { display: none; }
+  .hero-fg {
+    inset: 0;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 18%;
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
 }
 .hero-media::after {
   content: '';
