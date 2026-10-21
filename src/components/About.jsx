@@ -1,5 +1,5 @@
 import { useRef } from 'react';
-import cutout from '../assets/me-cutout.webp';
+import photo from '../assets/me-photo.webp';
 import { profile, stats } from '../data.js';
 import { gsap, useGSAP } from '../lib/scroll.js';
 
@@ -12,8 +12,13 @@ export default function About() {
       ease: 'none',
       scrollTrigger: { trigger: root.current, start: 'top bottom', end: 'bottom top', scrub: true },
     });
-    gsap.fromTo('.about-cutout', { yPercent: 12, scale: 0.94 }, {
+    gsap.fromTo('.about-photo', { yPercent: 10, rotate: -6 }, {
       yPercent: -6,
+      rotate: -2,
+      ease: 'none',
+      scrollTrigger: { trigger: root.current, start: 'top bottom', end: 'bottom top', scrub: true },
+    });
+    gsap.fromTo('.about-photo img', { scale: 1.2 }, {
       scale: 1,
       ease: 'none',
       scrollTrigger: { trigger: root.current, start: 'top bottom', end: 'bottom top', scrub: true },
@@ -44,7 +49,9 @@ export default function About() {
       <div className="container about-grid">
         <div className="about-visual">
           <div className="about-sun" />
-          <img src={cutout} alt="Portrait of Othman Ali" className="about-cutout" loading="lazy" />
+          <figure className="about-photo">
+            <img src={photo} alt="Othman Ali smiling in a bookstore" loading="lazy" />
+          </figure>
         </div>
 
         <div className="about-copy">

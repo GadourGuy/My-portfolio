@@ -32,7 +32,7 @@ export default function Hero({ ready }) {
       .to('.scroll-cue', { opacity: 0, duration: 0.1 }, 0)
       .fromTo('.mask-word', { scale: 18 }, { scale: 1, duration: 1, ease: 'power2.inOut' }, 0)
       .fromTo('.mask-fill, .mask-outline', { opacity: 0 }, { opacity: 1, duration: 0.4, ease: 'none' }, 0.08)
-      .fromTo('.hero-media img', { scale: 1.25 }, { scale: 1, duration: 1.1, ease: 'power2.inOut' }, 0)
+      .fromTo('.hero-media img', { scale: 1.08 }, { scale: 1, duration: 1.1, ease: 'power2.inOut' }, 0)
       .fromTo('.hero-after > *', { opacity: 0, y: 50 }, { opacity: 1, y: 0, stagger: 0.08, duration: 0.3 }, 0.85)
       .to('.hero-stage', { scale: 0.88, opacity: 0, duration: 0.5, ease: 'power2.in' }, 1.5);
   }, { scope: root, dependencies: [cx], revertOnUpdate: true });
@@ -41,7 +41,7 @@ export default function Hero({ ready }) {
     <section className={`hero ${ready ? 'is-ready' : ''}`} id="top" ref={root}>
       <div className="hero-stage">
         <div className="hero-media">
-          <img src={heroImg} alt="Othman Ali sitting on a bench at sunset" fetchPriority="high" />
+          <img src={heroImg} alt="Portrait of Othman Ali outdoors" fetchPriority="high" />
         </div>
 
         <svg className="hero-mask" viewBox={`0 0 ${vbW} ${VB_H}`} preserveAspectRatio="xMidYMid meet" aria-hidden="true">
